@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Coverage directory
+coverage/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Optional: Dependency lockfiles if you're using Yarn or pnpm instead of npm
+yarn.lock
+pnpm-lock.yaml
