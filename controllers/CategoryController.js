@@ -8,3 +8,13 @@ exports.index = async (req, res) => {
     console.error(error);
   }
 };
+
+exports.create = async (req, res) => {
+  try {
+    const { name } = req.body;
+    await Category.create({ name });
+    res.redirect("/");
+  } catch (error) {
+    console.error(error);
+  }
+};
