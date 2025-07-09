@@ -11,7 +11,7 @@ const seed = async () => {
 
     await User.deleteMany({});
 
-    const hashedPassword = await argon2.hash("1231231233");
+    const hashedPassword = await argon2.hash("123123123");
 
     await User.create({ name: "admin", password: hashedPassword });
 

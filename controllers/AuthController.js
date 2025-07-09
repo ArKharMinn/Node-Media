@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 exports.login = async (req, res) => {
   res.render("login");
 };
+
 const JWT_SECRET = process.env.JWT_SECRET;
 exports.handleLogin = async (req, res) => {
   try {

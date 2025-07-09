@@ -15,7 +15,7 @@ app.set("layout", "layout");
 app.use(cookie());
 
 mongoose
-  .connect("mongodb://localhost:27017/media", {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
